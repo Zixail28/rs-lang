@@ -1,0 +1,328 @@
+//MAIN START
+.main{
+  width: 100%;
+  height: auto;
+
+  &-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_groupWord {
+    width: 1048px;
+  }
+  .nav-title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 82px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .nav_group {
+    margin: 0px;
+  }
+  .nav_group-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+  }
+  .nav_group-list-title {
+    width: 163px;
+    height: 163px;
+    padding: 30px;
+    background: #B1A3F9;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 115px;
+    margin: 0 5px;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.9;
+      transform: translateY(5px);
+	}
+  }
+  .nav_group-list-title:first-child{
+    background: #B1A3F9;
+  }
+  .nav_group-list-title:nth-child(2){
+    background: #0FB9DB;
+  }
+  .nav_group-list-title:nth-child(3){
+    background: #BCCE25;
+  }
+  .nav_group-list-title:nth-child(4){
+    background: #F49838;
+  }
+  .nav_group-list-title:nth-child(5){
+    background: #E870D6;
+  }
+  .nav_group-list-title:last-child{
+    width: 1048px;
+    height: 120px;
+    display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  margin-top: 15px;
+	  margin-bottom: 60px;
+    background: #EE161F;
+    color: #000000;
+    border-radius: 30px;
+    text-align: center;
+
+  }
+
+  .group-range {
+    display: flex;
+  }
+  .group-range-title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 82px;
+    color: #FFFFFF;
+    padding: 0 13px;
+  }
+
+  .group-range-title:nth-child(2){
+    color: #BABABA;
+  }
+  .group-range-title:last-child {
+    color: #959495;
+  }
+
+  &-word-block{
+
+  }
+  &-word-block-title{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    color: #FFFFFF;
+  }
+  &_word-container{
+    width: 928px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_word-review{
+    width: 928px;
+    height: 374px;
+    margin-top: 28px;
+    background: #F3F4F8;
+    border-radius: 10px;
+  }
+  &_word-items{
+    width: 180px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F3F4F8;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  // Карточка слова
+  &_word-item {
+    width: 928px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  &_word-item-text {
+      width: 300px;
+      padding-left: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+  .word {
+    font-weight: 600;
+    line-height: 20px;
+    }
+  .wordTranslate {
+    font-weight: 500;
+    }
+  .transcription {
+
+    }
+    audio {
+      width: 300px;
+      height: 25px;
+  }
+  .textMeaning {
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .title-textMeaning {
+    font-weight: 500;
+    line-height: 19px;
+    }
+  .title-textMeaningTranslate {
+    font-weight: 500;
+    line-height: 19px;
+    }
+  .textExample {
+    font-weight: 600;
+    line-height: 20px;
+    }
+  .title-textExample {
+    font-weight: 500;
+    line-height: 19px;
+    }
+  .title-textExampleTranslate {
+    font-weight: 500;
+    line-height: 19px;
+    }
+    &_word-item-img img{
+    width: 579px;
+    height: 374px;
+    border-radius: 10px;
+      }
+}
+
+.main-book{
+  background-color: #0B0E1B;
+}
+
+  .btn{
+    cursor: pointer;
+  }
+  .btn-learned_word{
+    width: 72px;
+    height: 28px;
+    background: #008D39;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  .btn-hard_word{
+    width: 72px;
+    height: 28px;
+    background: #FF0744;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  .btn-hard_word:disabled,{
+    background: #73CEF5;
+    cursor: not-allowed;
+  }
+
+  .btn-hard-restore{
+    width: 120px;
+    height: 28px;
+    background: #FF0744;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  span{
+    font-size: 20px;
+  }
+
+
+.pagination {
+	display: flex;
+  align-items: center;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+
+  color: #FFFFFF;
+  margin-top: 62px;
+  margin-bottom: 86px;
+  list-style: none;
+  li{
+    padding: 0 5px;
+    cursor: pointer;
+  }
+ }
+//MAIN END
+//FOOTER START
+
+.footer {
+	background-color: #0295DB;
+	height: 200px;
+	width: 100vw;
+  display: flex;
+	align-items: center;
+  &-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  .github-li {
+    display: flex;
+    height: 27px;
+  }
+  .github-logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  .nickname {
+    font-family: 'GilroyHeavy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0B0E1B;;
+  }
+  .rsslogo {
+    max-width: 305px;
+    max-height: 115px;
+  }
+}
+
+.games-btns {
+  display: block;
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  font-size: 20px;
+  height: 80px;
+
+}
+
+.main-book .buttons {
+  flex-direction:row;
+  justify-content: space-between;
+  margin: 0;
+  padding-bottom: 20px;
+  filter: invert(1);
+}
+
+.sprint-btn{
+ margin-right: 20px;
+}
+
+.audiocall-btn {
+  margin-left: 20px;
+}
+
+.buttons {
+  font-family: "GilroyHeavy";
+  font-size: 25px;
+  line-height: 80px;
+}
